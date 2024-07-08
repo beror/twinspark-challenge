@@ -1,1 +1,98 @@
-#brands { background-color: #eee; }
+.brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: "Arial";
+  font-weight: bold;
+  box-shadow: 0px 0.5px 2px 0px rgba(96, 97, 112, 0.3);
+  box-shadow: 0px 0px 1px 0px rgba(40, 41, 61, 0.3);
+}
+
+.stretched-wrappable {
+  display: flex;
+  margin-left: clamp(6px, 5%, 20px);
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.stretched-wrappable > *{
+  margin-top: 4px;
+}
+
+.brand-item-left img {
+  width: 64px;
+  height: 64px;
+  border-radius: 5px;
+}
+
+.brand-item-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.brand-item-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-item-rating .star {
+  margin-right: 2px;
+}
+
+.brand-item-right {
+  display: flex;
+  align-items: center;
+}
+
+.follow {
+  padding: 5px 10px;
+  color: white;
+  background-color: rgba(255, 119, 82, 1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.follow:hover {
+  background-color: rgba(255, 119, 82, 0.8);
+}
+
+.followed {
+  display: flex;
+  align-items: center;
+  gap: 6.5px;
+  padding: 5px 10px;
+  border: 1px solid rgba(229, 229, 234, 1);
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.followed:hover {
+  background-color: rgba(255, 119, 82, 0.1);
+}
+
+#brands {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.review-count {
+  color: rgba(50, 189, 165);
+}
+
+#brands h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
