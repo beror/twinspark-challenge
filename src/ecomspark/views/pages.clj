@@ -24,5 +24,5 @@
 (defn Brands [opts]
   (base/wrap "Brands - EcomSpark"
     (hi/html
-      [:h1 "Brands"]
-      (brand/BrandList {:brands (:brands opts)}))))
+      [:h1.brand-item "Бренди"]
+      (brand/BrandList (select-keys opts [:brands :offset])))))

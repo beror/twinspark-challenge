@@ -86,6 +86,7 @@
                     {:status  303
                      :headers {"Location" "/brands"}})
          :body    {:success  true
+                   :id id
                    :brandsub brandsub
                    :count    (count brandsub)}})
 
@@ -98,6 +99,7 @@
                     {:status  303
                      :headers {"Location" "/brands"}})
          :body    {:success  true
+                   :id id
                    :brandsub brandsub
                    :count    (count brandsub)}})
 
